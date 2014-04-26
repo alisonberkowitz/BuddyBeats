@@ -1,0 +1,11 @@
+key = 'naa4src2f68rm2a5thcc36d6'
+secret = 'quVt6HsB64'
+
+def initialize(key, secret)
+    puts "Initializing Rdio consumer"
+    @consumer = OAuth::Consumer.new key, secret, {:site => SITE}
+    @consumer.http.read_timeout = 600 # ten-minute timeout, thanks
+    puts "Initializing Rdio access token"
+    @access_token = OAuth::AccessToken.new @consumer
+    puts "Rdio API ready"
+  end
