@@ -1,0 +1,13 @@
+﻿<h2>Your Playlist</h2>
+<div class="row-fluid" data-bind="visible:blasted">
+    <section class="col-md-7">
+        <ul data-bind="foreach: presentors">
+            <li data-bind="html: $data"></li>
+        </ul>
+    </section>
+</div>
+<div class="row-fluid" data-bind="visible:!blasted">
+    <section class="col-md-7">
+        <iframe data-bind="src: spotifyURLPlayer" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+    </section>
+</div>
