@@ -11,7 +11,8 @@
                 { route: '', title:'Welcome', moduleId: 'viewmodels/welcome', nav: true },
                 { route: 'present', title: 'Start A Sync', moduleId: 'viewmodels/presentation', nav: true },
                 { route: 'register', moduleId: 'viewmodels/register', nav: false },
-                { route: 'blast', moduleId: 'viewmodels/blast', nav: false },
+                { route: 'blast', moduleId: 'viewmodels/blast', nav: true },
+                { route: 'listen', moduleId: 'viewmodels/listen', nav: true },
 
             ]).buildNavigationModel();
             

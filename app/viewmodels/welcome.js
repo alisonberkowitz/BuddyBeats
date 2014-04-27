@@ -1,9 +1,9 @@
 ﻿define(function() {
     var ctor = function () {
         this.displayName = 'Welcome to Buddy Beats!';
-        this.description = 'Buddy Beats is based on Rdio.  It allows users to listen in sync with their friends.  Same playlist, same track. ';
+        this.description = 'Buddy Beats is based on Spotify.  It allows users to listen in sync with their friends.  Same playlist, same track. ';
         this.features = [
-            'Rdio Integration',
+            'Spotify Integration',
             'Synced playback'
         ];
     };
